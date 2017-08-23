@@ -32,8 +32,8 @@ class Top20Container extends React.Component {
   render(){
     return (
       <div className="Top20-box">
-        <Header title="UK Top 20 songs" />
-        <MusicList data={this.state.songs}/>
+        <Header title="iTunes UK Top 20 songs" />
+        <MusicList data={this.state.songs} chartPosition={this.state.chartPosition}/>
         <SeeMore text="See more at iTunes"/>
       </div>
     );

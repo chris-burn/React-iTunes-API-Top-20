@@ -14,6 +14,7 @@ render(){
 
    return (
      <div className="allSongs">
+      <h2>{this.props.chartPosition}</h2>
       <h3>{this.props.musicItem["im:artist"].label}</h3>
       <h4>{this.props.musicItem["im:name"].label}</h4>
       <img src={this.props.musicItem["im:image"][2].label} alt={this.props.musicItem["im:artist"].label}/>

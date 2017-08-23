@@ -4,7 +4,7 @@ import MusicItem from './MusicItem.jsx'
 const MusicList = (props) => {
     let musicNodes = props.data.map((musicItem, index) => {
         return (
-            <MusicItem musicItem={musicItem} key={index}  />
+            <MusicItem musicItem={musicItem} key={index} chartPosition={index+1} />
         )
     })
 
